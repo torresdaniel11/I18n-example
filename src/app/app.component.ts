@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'i18napp'; z
+  title = 'i18napp';
+  localeUrl: string;
+  constructor() {
+    this.localeUrl = location.href;
+  }
 }
