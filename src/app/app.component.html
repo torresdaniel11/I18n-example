@@ -1,6 +1,19 @@
+<header>
+  <nav>
+    <a *ngIf="!localeUrl.includes('en')" href="https://i18n-app-0.firebaseapp.com/en/">
+      <i>EN</i>
+    </a>
+    <a *ngIf="!localeUrl.includes('es')" href="https://i18n-app-0.firebaseapp.com/es/">
+      <i>ES</i>
+    </a>
+    <a *ngIf="!localeUrl.includes('fr')" href="https://i18n-app-0.firebaseapp.com/fr/">
+      <i>FR</i>
+    </a>
+  </nav>
+</header>
 <section>
   <article>
-    <h1 i18n="Card Header|Title for the under construction card@@constructionHeader"> Under Construction </h1>
+    <h1 i18n="Card Header|Title for the under construction card@@constructionHeader">Under Construction</h1>
     <p i18n="Card Description|Description for the under construction card@@constructionDescription">
       This page is under construction
     </p>
