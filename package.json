@@ -4,10 +4,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "start:fr": "ng serve --configuration=fr",
+    "start:es": "ng serve --configuration=es",
+    "build": "ng build  --deploy-url=/i18napp/",
+    "build:fr": "ng build --configuration=fr --deploy-url=/fr/",
+    "build:es": "ng build --configuration=es --deploy-url=/es/",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "int:extract": "ng xi18n --output-path locale"
   },
   "private": true,
   "dependencies": {
